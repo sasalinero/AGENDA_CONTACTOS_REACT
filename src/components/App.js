@@ -5,7 +5,6 @@ import initialData from "./data.json";
 function App() {
   const [contactos, setContacto] = useState(initialData);
   const [search, setSearch] = useState("");
-  //const [newContact, setContact] = useState("");
   const [newName, setName] = useState("");
   const [newApellido, setApellido] = useState("");
   const [newTelefono, setTelefono] = useState("");
@@ -42,13 +41,13 @@ function App() {
 
   const renderContactos = () => {
     return contactos
-
+      //Aquí uso un filter para poder usar el buscador y que me aparezca las coincidencias segun voy escribiendo
       .filter((contacto) => {
         return contacto.name.toLowerCase().includes(search.toLowerCase());
-      })
+      }) //El uso del map en este caso es para poder byuscar dentro la parte que me interese renderizar, nombre, apellidos etc
       .map((contacto) => {
         return (
-          <ul>
+          <ul className="tarjetas">
             <li className="tarjetaColor">
               <p>Nombre: {contacto.name}</p>
 
@@ -65,18 +64,18 @@ function App() {
 
   return (
     <div className="cuadricula">
-      <h1 className="agenda">Mi Agenda de Contactos</h1>
+    <header><h1 className="agenda">Mi Agenda de Contactos</h1></header>    
+      
       <input
         className="search"
         type="text"
-        placeholder="Filtrar contactos por nombre"
+        placeholder="Nombre"
         onChange={handleFilter}
-      />
-      <ul>{renderContactos()}</ul>
-
+      /> 
+      
       <form action="" onClick={handleClick}>
         <label htmlFor="name" className="add">
-          Añade un nuevo contacto
+          Nuevo contacto
           <input
             type="text"
             placeholder="Nombre"
@@ -100,7 +99,7 @@ function App() {
           />
           <input
             type="email"
-            placeholder="email"
+            placeholder="Email"
             className="input"
             id="email"
             onChange={handleChangeEmail}
@@ -113,6 +112,10 @@ function App() {
           onClick={handleClick}
         />
       </form>
+      <ul>{renderContactos()}</ul>
+      
+
+      
     </div>
   );
 }

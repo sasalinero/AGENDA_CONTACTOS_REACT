@@ -4,7 +4,77 @@
     height: 100vh;
     background-color: rgb(135, 90, 219);
   }
+  .agenda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f8f8f8;
+  }
+  .cuadricula {
+  display: flex;
+  flex-direction: column;
+}
+.search {
+  
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.tarjetas{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 
+}
+
+
+.tarjetaColor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+    justify-content: space-evenly;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 10rem;
+    list-style: none;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+  background-color: rgb(219, 90, 219);
+  box-shadow: rgba(0, 0, 0, 0.973) 0px 2px 8px 0px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 15px;
+  margin: 20px;
+}
+.add {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 10rem;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  background-color: #f8f8f8;
+  outline: none;
+  font-size: 20px;
+}
+.input {
+  font-size: 20px;
+  margin: 0.2rem;
+}
+.button {
+  
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  border: 1px solid #ddd;
+  background-color: rgb(135, 90, 219);
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
 
 
 @media all and (min-width:780px){
