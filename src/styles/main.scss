@@ -1,3 +1,22 @@
+
+  body {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(135, 90, 219);
+  }
+
+
+
+@media all and (min-width:780px){
+  body {
+    display: flex;
+    height: 100vh;
+      background-color: pink;
+  }
+}
+
+@media all and (min-width:1200px){
+
 body {
   display: flex;
   height: 100vh;
@@ -56,4 +75,5 @@ body {
 }
 .input {
   font-size: 20px;
+}
 }
