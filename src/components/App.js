@@ -48,8 +48,8 @@ function App() {
       }) //El uso del map en este caso es para poder buscar dentro la parte que me interese renderizar, nombre, apellidos etc
       .map((contacto) => {
         return (
-          <ul className="tarjetas">
-            <li className="tarjetaColor">
+          
+            <li className="tarjetas">
               <p>Nombre: {contacto.name}</p>
 
               <p>Apellido:{contacto.lastname}</p>
@@ -58,7 +58,7 @@ function App() {
 
               <p>Email:{contacto.email}</p>
             </li>
-          </ul>
+          
         );
       });
       
@@ -116,7 +116,7 @@ function App() {
           onClick={handleClick}
         />
       </form>
-      <ul><li>{renderContactos()}</li></ul>
+      <ul className="unico_ul" >{renderContactos()}</ul>
       
    
 

@@ -37,7 +37,7 @@ li{
   list-style:none
 }
 
-.tarjetaColor {
+.tarjetas {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -53,8 +53,15 @@ li{
   font-weight: bold;
   color: #fff;
   font-size: 15px;
-  //margin: 20px;
+  margin: 40px;
+  text-align: center;
 }
+.unico_ul{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
 .form{
   display: flex;
   flex-direction: row;
