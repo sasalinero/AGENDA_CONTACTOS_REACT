@@ -2,6 +2,7 @@ import "../styles/main.scss";
 import { useState } from "react";
 import initialData from "./data.json";
 
+
 function App() {
   const [contactos, setContacto] = useState(initialData);
   const [search, setSearch] = useState("");
@@ -44,7 +45,7 @@ function App() {
       //Aquí uso un filter para poder usar el buscador y que me aparezca las coincidencias segun voy escribiendo
       .filter((contacto) => {
         return contacto.name.toLowerCase().includes(search.toLowerCase());
-      }) //El uso del map en este caso es para poder byuscar dentro la parte que me interese renderizar, nombre, apellidos etc
+      }) //El uso del map en este caso es para poder buscar dentro la parte que me interese renderizar, nombre, apellidos etc
       .map((contacto) => {
         return (
           <ul className="tarjetas">
@@ -60,26 +61,29 @@ function App() {
           </ul>
         );
       });
+      
   };
 
   return (
     <div className="cuadricula">
-    <header><h1 className="agenda">Mi Agenda de Contactos</h1></header>    
       
+    <header><h1 className="agenda">Mi Agenda de Contactos</h1></header>    
+       
       <input
         className="search"
         type="text"
-        placeholder="Nombre"
+        placeholder="Busca tu contacto"
         onChange={handleFilter}
       /> 
+    
       
-      <form action="" onClick={handleClick}>
+      <form action="" onClick={handleClick} className="form">
         <label htmlFor="name" className="add">
           Nuevo contacto
           <input
             type="text"
             placeholder="Nombre"
-            className="input"
+            className="input "
             id="name"
             onChange={handleChangeName}
           />
@@ -112,8 +116,9 @@ function App() {
           onClick={handleClick}
         />
       </form>
-      <ul>{renderContactos()}</ul>
+      <ul><li>{renderContactos()}</li></ul>
       
+   
 
       
     </div>
