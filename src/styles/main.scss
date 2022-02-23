@@ -12,18 +12,20 @@
     align-items: center;
     color: black;
     text-decoration: underline wavy pink;
-    font-family: 'Shizuru', cursive;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    
   }
-//   .cuadricula {
-//   display: flex;
-//   flex-direction: column;
-// }
+
 .search {
-  
- 
+   
   font-size: 20px;
   margin-bottom: 1rem;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
 }
 
 .ul_contatos{
@@ -41,11 +43,9 @@ li{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-    justify-content: space-evenly;
-  margin-bottom: 1rem;
+  justify-content: space-evenly;
   padding: 1rem;
   width: 10rem;
-    list-style: none;
   border-radius: 0.5rem;
   border: 1px solid #ddd;
   background-color: rgb(219, 90, 219);
@@ -55,20 +55,19 @@ li{
   font-size: 15px;
   margin: 40px;
   text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 .unico_ul{
   display: flex;
   flex-wrap: wrap;
   
 }
-
 .form{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
-
 .add {
   display: flex;
   flex-direction: column;
@@ -105,7 +104,7 @@ li{
   body {
     display: flex;
     height: 100vh;
-      background-color: pink;
+      background-color: #60d625
   }
 }
 
@@ -114,46 +113,34 @@ li{
 body {
   display: flex;
   height: 100vh;
-    background-color: rgb(240, 176, 14);
+    background-color: #f03a8fe1;
 }
-.cuadricula {
+  
+ .agenda {
+  text-decoration: underline wavy rgb(213, 226, 34);
+  font-size: 50px;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+   
+.add {
   display: flex;
   flex-direction: column;
-}
-.search {
-  display: inline-block;
-  font-size: 20px;
-}
-.tarjetaColor {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  width: 20rem;
-  list-style: none;
-  border-radius: 0.5rem;
-  border: 1px solid #ddd;
-  background-color: rgb(135, 90, 219);
-  box-shadow: rgba(0, 0, 0, 0.973) 0px 2px 8px 0px;
-  font-weight: bold;
-  color: #fff;
-  font-size: 20px;
-}
-.agenda {
-  display: flex;
-  justify-content: center;
-}
-.add {
-  margin-right: 1rem;
   margin-bottom: 1rem;
   padding: 0.5rem;
-  width: 10rem;
+  width: 30rem;
   border: 2px solid #ddd;
   border-radius: 0.5rem;
-  background-color: #f8f8f8;
+  background-color: rgb(213, 226, 34);
   outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.tarjetas{
+  background-color: #00BFE6;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+ 
 }
 
 .button {
@@ -161,15 +148,16 @@ body {
   border-radius: 0.5rem;
   border: none;
   border: 1px solid #ddd;
-  background-color: rgb(135, 90, 219);
+  background-color: rgb(213, 226, 34);
   font-weight: bold;
-  color: #fff;
+  color: black;
   cursor: pointer;
   transition: all ease 0.3s;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 .input {
   font-size: 20px;
-  //color: black;
+
 }
 }
 p{
